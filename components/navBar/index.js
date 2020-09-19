@@ -1,5 +1,5 @@
+// import '@style/navBar/navBar.less'
 import { Row, Col, Menu } from 'antd'
-import './styles/navBar/navBar.scss'
 const navBar = () => (
   <>
     <header>
