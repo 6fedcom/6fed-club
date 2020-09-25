@@ -5,10 +5,12 @@ import { LoginOutlined, EditOutlined } from '@ant-design/icons';
 import { color_white } from '../constants/CustomTheme';
 
 // Only holds serverRuntimeConfig and publicRuntimeConfig from next.config.js nothing else.
-const { publicRuntimeConfig: { staticFolder } } = getConfig();
+const {
+  publicRuntimeConfig: { staticFolder },
+} = getConfig();
 
 const Header = () => (
-  <div id='header_bar' className='container'>
+  <div id="header_bar" className="container">
     <style jsx>{`
       .container {
         position: fixed;
@@ -44,18 +46,18 @@ const Header = () => (
         right: 20px;
       }
     `}</style>
-    <Link href='/'>
-      <div className='logo-container'>
-        <img className='logo' alt='logo' src={`${staticFolder}/logo.png`} />
-        <a className='sys-name'>Next-Antd-Scaffold</a>
+    <Link href="/">
+      <div className="logo-container">
+        <img className="logo" alt="logo" src={`${staticFolder}/logo.png`} />
+        <a className="sys-name">Next-Antd-Scaffold1</a>
       </div>
     </Link>
-    <div className='right-container'>
-      <Button style={{ margin: '0 10px' }} type='primary' ghost>
+    <div className="right-container">
+      <Button style={{ margin: '0 10px' }} type="primary" ghost>
         <LoginOutlined />
         Login
       </Button>
-      <Button type='primary'>
+      <Button type="primary">
         <EditOutlined />
         Register
       </Button>
